@@ -10,6 +10,7 @@
 html {
   scroll-behavior: smooth;
 }
+
 body {
   font-family: "Bai Jamjuree", sans-serif;
   font-size: 1.2rem;
@@ -45,11 +46,9 @@ h4,
 h5 {
   text-align: center;
 }
-
 .btn-container {
   margin-left: 40%;
 }
-
 button {
   width: 130px;
   height: 27px;
@@ -93,10 +92,7 @@ button {
 .keep-track-grid p {
   text-align: justify;
 }
-.computer {
-  position: relative;
-  left: -155px;
-}
+
 .access {
   margin-top: 5em;
 }
@@ -112,11 +108,15 @@ button {
   justify-content: space-evenly;
   margin-top: 2em;
 }
+.image {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+.image h5 {
+  margin-bottom: 15px;
+}
 .image-flex {
-  position: relative;
-  right: -180px;
-  width: -moz-fit-content;
-  width: fit-content;
+  margin-left: 45%;
 }
 .company-logos {
   display: flex;
@@ -166,4 +166,99 @@ a:hover {
 }
 .social-container a img:hover {
   border-bottom: 2px solid lightgray;
+}
+
+@media screen and (max-width: 675px) {
+  p {
+    text-align: center;
+    font-size: 0.6rem;
+    line-height: 1rem;
+  }
+  h3,
+  h4,
+  h5 {
+    text-align: center;
+    font-size: 1rem;
+  }
+  .btn-container {
+    margin-left: 35%;
+  }
+  .keep-track-flex {
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    margin-left: 50px;
+  }
+  .keep-track-grid {
+    margin-top: 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 85%;
+    gap: 25px;
+  }
+  .keep-track-grid h5 {
+    margin-bottom: 5px;
+    text-align: center;
+  }
+  .keep-track-grid p {
+    text-align: center;
+  }
+  .computer {
+    width: 275px;
+    height: auto;
+  }
+  .devices {
+    width: 275px;
+    height: auto;
+    margin-right: 50px;
+  }
+  .supercharge-flex {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+  }
+  .image-flex {
+    margin-left: 35%;
+    height: 50px;
+  }
+  .image {
+    /*  background-color: crimson; */
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .company-logos {
+    display: flex;
+    flex-direction: column;
+  }
+  footer {
+    background-color: hsl(201, 11%, 66%);
+    margin-top: 5em;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+  }
+  .links-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+  }
+  .social-container {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 60px;
+    width: 100%;
+  }
+
+  footer figure img {
+    height: auto;
+    width: 50px;
+    margin-left: 0.1em;
+    margin-top: 2em;
+    cursor: pointer;
+  }
 }
